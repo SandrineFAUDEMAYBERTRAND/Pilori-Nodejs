@@ -4,6 +4,9 @@ import * as dotenv from 'dotenv';
 import session from "express-session";
 dotenv.config();
 
+import router from './app/router.js';
+
+
 const port = process.env.PORT || 3000;
 const app = express();
 
@@ -19,6 +22,9 @@ app.use(session({
 }));
 
 app.use(express.static('./S06-inte-pilori-sandrineFAUDEMAYBERTRAND/public'));
+app.use(express.urlencoded({ extended: true }));
+
+app.use(router);
 
 app.listen(port, () => {
     console.log(`Serveur démarré sur http://localhost:${port}`);
