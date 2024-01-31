@@ -1,0 +1,29 @@
+{
+  "name": "s06-atelier-pilori-sandrinefaudemaybertrand",
+  "version": "1.0.0",
+  "description": "Cette saison on a vu comment créer des serveur HTTP et comment faire un site dynamique en respectant l'architecture MVC.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Cthulu/S06-atelier-pilori-SandrineFAUDEMAYBERTRAND.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/O-clock-Cthulu/S06-atelier-pilori-SandrineFAUDEMAYBERTRAND/issues"
+  },
+  "homepage": "https://github.com/O-clock-Cthulu/S06-atelier-pilori-SandrineFAUDEMAYBERTRAND#readme",
+  "devDependencies": {
+    "node-dev": "^8.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1"
+  }
+}
