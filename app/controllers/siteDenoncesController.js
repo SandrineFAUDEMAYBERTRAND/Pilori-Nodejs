@@ -2,7 +2,9 @@ import validator from 'validator';
 
 
 const siteDenoncesController = {
-
+    showTomatesDenoncer: (req, res) => {
+        res.render('denonciation');
+    },
 }
 
 

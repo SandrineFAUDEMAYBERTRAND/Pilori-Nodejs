@@ -1,7 +1,9 @@
+import website from "../data/website.js";
 
 const mainController = {
     showHomePage: (req, res) => {
         res.render('accueil');
+        
     },
 
     showMentionsLegales: (req, res) => {
@@ -16,18 +18,8 @@ const mainController = {
         res.render('tomates');
     },    
 
-   
 
 
 
 }
-
-
-    
-
-
-
-
-
-
 export default mainController;

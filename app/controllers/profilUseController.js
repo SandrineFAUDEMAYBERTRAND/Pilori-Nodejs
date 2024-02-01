@@ -3,8 +3,6 @@ import validator from 'validator';
 
 const profilUseController = {
 
-}
-
 showProfilUtilisateur: (req, res) => {
     res.render('profil d/un utilisateur');
 },
@@ -12,6 +10,7 @@ showProfilUtilisateur: (req, res) => {
 showDeconnexion: (req, res) => {
     res.render('deconnexion');
 },
+}
 
 
 
