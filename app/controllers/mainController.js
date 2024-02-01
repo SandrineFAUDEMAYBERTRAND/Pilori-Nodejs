@@ -8,6 +8,18 @@ const mainController = {
         res.render('mentions-legales');
     },
 
+    showContact: (req, res) => {
+        res.render('contact');
+    },
+
+    showTomates: (req, res) => {
+        res.render('tomates');
+    },    
+
+   
+
+
+
 }
 
 
