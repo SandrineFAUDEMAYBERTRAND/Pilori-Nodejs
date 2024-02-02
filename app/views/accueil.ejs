@@ -19,7 +19,8 @@
                     data-feather="grid"></i></button>
         </div>
         <div class="card-container">
-            <article class="card">
+            <% for(const website of websites) { %>
+               <article class="card">
                 <div class="card-tags">
                     <span class="card-tag">
                         Moche
@@ -29,137 +30,22 @@
                         130
                     </span>
                 </div>
-                <img class="card-img" src="./img/ph1.jpg" alt="">
+                <img class="card-img" src="ph1.jpg" alt="">
                 <div class="card-content">
-                    <h3 class="card-title">Doctolib</h3>
-                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, placeat!</p>
+                    <h3 class="card-title">
+                        <%= website.Titre %>
+                    </h3>
+                    <p class="card-desc"> <%= website.Description %></p>
                     <a class="card-more" href="#">Lire la suite</a>
                 </div>
                 <footer class="card-actions">
-                    <a class="card-link" href="#">Consulter le site</a>
+                    <a class="card-link" href="<%= website.Adresse %>">Consulter le site</a>
                     <button class="card-btn card-btn--red"><i data-feather="circle"></i></button>
                     <button class="card-btn card-btn--light"><i data-feather="check"></i></button>
                     <button class="card-btn card-btn--dark"><i data-feather="share-2"></i></button>
                 </footer>
             </article>
-            <article class="card">
-                <div class="card-tags">
-                    <span class="card-tag">
-                        Bloquant
-                    </span>
-                    <span class="card-tag card-tag--red">
-                        <i data-feather="circle"></i>
-                        220
-                    </span>
-                </div>
-                <img class="card-img" src="./img/ph2.jpg" alt="">
-                <div class="card-content">
-                    <h3 class="card-title">Fnac</h3>
-                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cum maxime
-                        explicabo!</p>
-                    <a class="card-more" href="#">Lire la suite</a>
-                </div>
-                <footer class="card-actions">
-                    <a class="card-link" href="#">Consulter le site</a>
-                    <button class="card-btn card-btn--red"><i data-feather="circle"></i></button>
-                    <button class="card-btn card-btn--light"><i data-feather="check"></i></button>
-                    <button class="card-btn card-btn--dark"><i data-feather="share-2"></i></button>
-                </footer>
-            </article>
-            <article class="card">
-                <div class="card-tags">
-                    <span class="card-tag">
-                        Moche
-                    </span>
-                    <span class="card-tag card-tag--red">
-                        <i data-feather="circle"></i>
-                        235
-                    </span>
-                </div>
-                <img class="card-img" src="./img/ph3.jpg" alt="">
-                <div class="card-content">
-                    <h3 class="card-title">Agence Nationale des Titres de Sécurité</h3>
-                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, placeat!</p>
-                    <a class="card-more" href="#">Lire la suite</a>
-                </div>
-                <footer class="card-actions">
-                    <a class="card-link" href="#">Consulter le site</a>
-                    <button class="card-btn card-btn--red"><i data-feather="circle"></i></button>
-                    <button class="card-btn card-btn--light"><i data-feather="check"></i></button>
-                    <button class="card-btn card-btn--dark"><i data-feather="share-2"></i></button>
-                </footer>
-            </article>
-            <article class="card">
-                <div class="card-tags">
-                    <span class="card-tag">
-                        Casse tête
-                    </span>
-                    <span class="card-tag card-tag--red">
-                        <i data-feather="circle"></i>
-                        138
-                    </span>
-                </div>
-                <img class="card-img" src="./img/ph4.jpg" alt="">
-                <div class="card-content">
-                    <h3 class="card-title">SNCF</h3>
-                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cum maxime
-                        explicabo!</p>
-                    <a class="card-more" href="#">Lire la suite</a>
-                </div>
-                <footer class="card-actions">
-                    <a class="card-link" href="#">Consulter le site</a>
-                    <button class="card-btn card-btn--red"><i data-feather="circle"></i></button>
-                    <button class="card-btn card-btn--light"><i data-feather="check"></i></button>
-                    <button class="card-btn card-btn--dark"><i data-feather="share-2"></i></button>
-                </footer>
-            </article>
-            <article class="card">
-                <div class="card-tags">
-                    <span class="card-tag">
-                        Moche
-                    </span>
-                    <span class="card-tag card-tag--red">
-                        <i data-feather="circle"></i>
-                        431
-                    </span>
-                </div>
-                <img class="card-img" src="./img/ph1.jpg" alt="">
-                <div class="card-content">
-                    <h3 class="card-title">Craiglist</h3>
-                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, placeat!</p>
-                    <a class="card-more" href="#">Lire la suite</a>
-                </div>
-                <footer class="card-actions">
-                    <a class="card-link" href="#">Consulter le site</a>
-                    <button class="card-btn card-btn--red"><i data-feather="circle"></i></button>
-                    <button class="card-btn card-btn--light"><i data-feather="check"></i></button>
-                    <button class="card-btn card-btn--dark"><i data-feather="share-2"></i></button>
-                </footer>
-            </article>
-            <article class="card">
-                <div class="card-tags">
-                    <span class="card-tag">
-                        Bloquant
-                    </span>
-                    <span class="card-tag card-tag--red">
-                        <i data-feather="circle"></i>
-                        211
-                    </span>
-                </div>
-                <img class="card-img" src="./img/ph2.jpg" alt="">
-                <div class="card-content">
-                    <h3 class="card-title">Oclock.io</h3>
-                    <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cum maxime
-                        explicabo!</p>
-                    <a class="card-more" href="#">Lire la suite</a>
-                </div>
-                <footer class="card-actions">
-                    <a class="card-link" href="#">Consulter le site</a>
-                    <button class="card-btn card-btn--red"><i data-feather="circle"></i></button>
-                    <button class="card-btn card-btn--light"><i data-feather="check"></i></button>
-                    <button class="card-btn card-btn--dark"><i data-feather="share-2"></i></button>
-                </footer>
-            </article>
+        <% } %>
         </div>
         <footer class="segment-actions">
             <a class="btn" href="#">Tout voir</a>

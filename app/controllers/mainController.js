@@ -1,8 +1,8 @@
-import website from "../data/website.js";
+import websites from "../data/website.js";
 
 const mainController = {
     showHomePage: (req, res) => {
-        res.render('accueil');
+        res.render('accueil', {websites});
         
     },
 
@@ -18,7 +18,7 @@ const mainController = {
         res.render('tomates');
     },    
 
-
+   
 
 
 }
