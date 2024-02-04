@@ -1,21 +1,26 @@
-import websites from "../data/website.js";
+import websites from "../data/websites.js";
 
 const mainController = {
-    showHomePage: (req, res) => {
-        res.render('accueil', {websites:websites.slice (0, 3)});  
+    showHomePage: (req, res) => {                             
+        const websitesSlicedList = websites.slice(0,3);         
+        res.render('home', {websites: websitesSlicedList});    
     },
 
-    showMentionsLegales: (req, res) => {
-        res.render('mentions-legales');
+    showLegalsPage: (req, res) => {                             
+        res.render("soon", {title: "Mentions Légales"});        
     },
 
-    showContact: (req, res) => {
-        res.render('contact');
+    showPlanPage: (req, res) => {                            
+        res.render("soon", {title: "Plan"});                    
     },
 
-    showTomates: (req, res) => {
-        res.render('tomates');
-    },    
+    showContactPage: (req, res) => {                            
+        res.render("soon", {title: "Contact"});                 
+    },
 
+    showNotFoundPage: (req, res) => {                          
+        res.render("error", {message: "La page demandée n'a pas pu être trouvée"});
+    }
 }
-export default mainController;
+
+export default mainController; 
